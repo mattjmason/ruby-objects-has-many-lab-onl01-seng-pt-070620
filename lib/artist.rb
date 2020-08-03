@@ -20,27 +20,14 @@ class Artist
   def songs 
     Song.all.select do |song| song.artist == self 
     end 
-end 
+  end 
+  
+  def self.song_count
+    Song.all.length 
+  end 
   
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
   
 end 
 
